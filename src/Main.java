@@ -9,5 +9,9 @@ public class Main {
         tasks.add(new Task("Play Game", Priority.LOW));
         tasks.add(new Task("Sports", Priority.MEDIUM));
         tasks.sort();
+
+        for (Task task : tasks) {
+            task.displayDetails();
+        }
     }
 }
